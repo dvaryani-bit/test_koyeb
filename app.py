@@ -6,8 +6,10 @@ def home():
     return render_template('index.html')
 
 if __name__ == "__main__":
+    print("hello")
     json_file = 'test.json'
     with open(json_file, 'r') as file:
         data = json.load(file)
+        print(data)
     app.run(port = 5000)
     #### testing if opening a file works
